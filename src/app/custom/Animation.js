@@ -8,6 +8,7 @@ export default class Animation {
   }
 
   init() {
+    this.animate();
     this.listen();
   }
 
@@ -120,7 +121,6 @@ export default class Animation {
     });
   }
   play() {
-    this.animate();
     this._tl.paused() ? this._tl.resume() : this._tl.restart();
   }
   pause() {
